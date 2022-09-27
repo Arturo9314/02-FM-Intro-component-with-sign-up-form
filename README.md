@@ -1,7 +1,7 @@
-- “Don't count the days. Make the days count”
-*-Muhammad Ali*
+- “That is what life is about. We do not get redos, but we do get second chances.”
+*-Jeffrey Fry*
 
-<h1 align="center">Hi 👽, everybody</h1>
-<h3 align="center">This is my fourth project</h3>
-<p class="text-center">I builded this project using bootstrap, Sass, Also I did a little different version seizing the project to pick up on the issue of "Drag and drop" in Javascript. Thanks for watch me 🤗</p>
-<p><a href="https://arturo9314.github.io/04-FM-Testimonial-Grid-Section/" target="_blank" textstyle="text-decoration: none;">View Awsome Sign Up Form<a/></p>
+<h1 align="center">Hi 🐱‍👤, everybody</h1>
+<h3 align="center">This is my Second Project</h3>
+<p class="text-center">I builded this project using bootstrap for form, I align better than firts time. Also used Sass to style, like i said it the way I understand Css best. Finally this is the first time that I can use Javascript-ES6. Thanks for watch me 🤗</p>
+<p><a href="https://arturo9314.github.io/02-FM-Intro-component-with-sign-up-form/" target="_blank" textstyle="text-decoration: none;">View Awsome Sign Up Form<a/></p>
