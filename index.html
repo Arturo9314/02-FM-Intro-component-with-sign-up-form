@@ -4,66 +4,60 @@
     <meta charset="UTF-8">
     <meta http-equiv="X-UA-Compatible" content="IE=edge">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
-    <title>Awsome Intro Component With Signup form</title>
+    <title>Awesome Intro Component With Signup form</title>
     <link rel = "icon" href = "img/assets/favicon-32x32.png" 
         type = "image/x-icon">
-    <link href="https://cdn.jsdelivr.net/npm/bootstrap@5.2.1/dist/css/bootstrap.min.css" rel="stylesheet" integrity="sha384-iYQeCzEYFbKjA/T2uDLTpkwGzCiq6soy8tYaI1GyVh/UjpbCx/TYkiZhlZB6+fzT" crossorigin="anonymous">
-    <link rel="stylesheet" href="css/styles.css">
+    <link rel="stylesheet" href="css/style.css">
 </head>
-<body>
     <style>
-        body{
-            background-image: url('img/assets/bg-intro-desktop.png');
+        .form-control.is-invalid, .was-validated .form-control:invalid{
+            background-image: url('img/assets/icon-error.svg');
         }
-        @media(max-width: 767px){
+        @media(max-width: 800px){
             body{
                 background-image: url('img/assets/bg-intro-mobile.png');
             }
         }
-        .form-control.is-invalid, .was-validated .form-control:invalid{
-            background-image: url('img/assets/icon-error.svg');
-        }
     </style>
-    <div class="container">
-        <div class="row">
-            <div class="col-md-6 first-colum">
-                <h1 class="title">Learn to code by watching others</h1>
-                <p class="description">See how experienced developers solve problems in real-time.
-                    Watching scripted tutorials in great, but understanding how developers think is invaluable</p>
+<body>
+    <main>
+        <aside>
+            <h1 class="title">Learn to code by watching others</h1>
+            <p class="description">See how experienced developers solve problems in real-time.
+                Watching scripted tutorials in great, but understanding how developers think is invaluable</p>    
+        </aside>
+        <article>
+            <div class="header">
+                <p class="p-header">Try it free 7 days<span class="s-header"> then $20/mo. thereafter</span></p>
             </div>
-            <div class="col-md-6 second-colum">
-                <div class="header">
-                    <p class="p-header">Try it free 7 days<span class="s-header"> then $20/mo. thereafter</span></p>
+            <form id="form" action="/" method="post" class="form-m needs-validation" novalidate>
+                <div class="block-input">
+                    <input type="text" class="form-control" id="validationServer01" name="name" placeholder="First Name"  aria-describedby="01Feedback-valid 01FeedBack-invalid" required>
+                    <div class="valid-feedback feedback"  id="01Feedback-valid">What A Beautiful Name!</div>
+                    <div class="invalid-feedback feedback" id="01Feedback-invalid">First name cannot be empty</div>
                 </div>
-                <form id="form" action="/" method="post" class="form-m needs-validation" novalidate>
-                    <div class="mb-3">
-                        <input type="text" class="form-control" id="validationServer01" name="name" placeholder="First Name"  aria-describedby="validationServer01Feedback" required>
-                        <div class="valid-feedback"  id="validationServer01Feedback">What A Beautiful Name!</div>
-                        <div class="invalid-feedback" id="validationServer01Feedback">First name cannot be empty</div>
-                    </div>
-                    <div class="mb-3">
-                        <input type="text" class="form-control" id="validationServer02" name="last-name" placeholder="Last Name" aria-describedby="validationServer02Feedback" required>
-                        <div class="valid-feedback" id="validationServer02Feedback">Looks great!</div>
-                        <div class="invalid-feedback" id="validationServer02Feedback">Last Name cannot be empty</div>
-                    </div>
-                    <div class="mb-3">
-                        <input type="email" class="form-control" id="validationServer03" name="email" placeholder="Email Address" aria-describedby="validationServer03Feedback" required>
-                        <div class="valid-feedback" id="validationServer03Feedback">Very nice!</div>
-                        <div class="invalid-feedback" id="validationServer03Feedback">Looks like this not an email</div>
-                    </div>
-                    <div class="mb-3">
-                        <input type="password" class="form-control" id="validationServer04" name="password" placeholder="Password" aria-describedby="validationServer04Feedback" required>
-                        <div class="valid-feedback" id="validationServer04Feedback">Pretty Good!</div>
-                        <div class="invalid-feedback" id="validationServer04Feedback">Password cannot be empty</div>
-                    </div>
-                    <div class="mb-3">
-                        <button type="submit" value="submit" class="btn text-center">CLAIM YOUR FREE TRIAL</button>
-                        <p class="conditions text-center">By clicking the button you are agreeing to our <a href="#" style="text-decoration: none;" target="_blank">Terms and Services</a></p>
-                    </div>
-                </form>
-            </div>
-        </div>
-    </div>
+                <div class="block-input">
+                    <input type="text" class="form-control" id="validationServer02" name="last-name" placeholder="Last Name" aria-describedby="02Feedback-valid 02Feedback-invalid" required>
+                    <div class="valid-feedback feedback" id="02Feedback-valid">Looks great!</div>
+                    <div class="invalid-feedback feedback" id="02Feedback-invalid">Last Name cannot be empty</div>
+                </div>
+                <div class="block-input">
+                    <input type="email" class="form-control" id="validationServer03" name="email" placeholder="Email Address" aria-describedby="03Feedback-valid 03Feedback-invalid" required>
+                    <div class="valid-feedback feedback" id="03Feedback-valid">Very nice!</div>
+                    <div class="invalid-feedback feedback" id="03Feedback-invalid">Looks like this not an email</div>
+                </div>
+                <div class="block-input">
+                    <input type="password" class="form-control" id="validationServer04" name="password" placeholder="Password" aria-describedby="04Feedback-valid 04Feedback-invalid" required>
+                    <div class="valid-feedback feedback" id="04Feedback-valid">Pretty Good!</div>
+                    <div class="invalid-feedback feedback" id="04Feedback-invalid">Password cannot be empty</div>
+                </div>
+                <div class="block-footer">
+                    <button type="submit" value="submit" class="btn">CLAIM YOUR FREE TRIAL</button>
+                    <p class="conditions">By clicking the button you are agreeing to our <a href="#" style="text-decoration: none;" target="_blank">Terms and Services</a></p>
+                </div>
+            </form>
+        </article>
+    </main>
 </body>
 <script defer src="index.js"></script>
 </html>
