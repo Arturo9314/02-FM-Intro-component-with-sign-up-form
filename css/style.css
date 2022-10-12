@@ -15,7 +15,6 @@ body {
   align-items: center;
   min-height: 100vh;
   background-color: hsl(0deg, 100%, 74%);
-  background-image: url("../Img/assets/bg-intro-desktop.png");
   font-size: 1rem;
   font-family: "Poppins", sans-serif;
   font-weight: 400;
